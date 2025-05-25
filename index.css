@@ -181,4 +181,36 @@ section {
 }
 
 /* Origins, Where It All Started */
-.origins h1 {}
+.origins {
+    background-image: url("images/origins-background.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.origins h1 {
+    font-family: 'Alexandria';
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    color: #FFFEFB;
+}
+
+.origins img {
+    max-width: 485px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.origins p {
+    font-family: 'Alexandria';
+    font-weight: 400;
+    font-size: 23px;
+    padding: 1em;
+    text-align: center;
+    color: #FFFEFB;
+    max-width: 60%;
+}
