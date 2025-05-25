@@ -1,6 +1,15 @@
-html specific html {
+/* html specific  */
+html {
     scroll-behavior: smooth;
+    overflow: scroll;
+    overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
 
 body,
 section {
@@ -27,10 +36,11 @@ section {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    padding-left: 90px;
 }
 
 .logo {
-    height: 40px;
+    height: 60px;
     width: auto;
 }
 
@@ -43,19 +53,21 @@ section {
 
 .nav-right {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
+    padding-right: 6em;
 }
 
 .nav-right a {
     font-family: 'Alexandria', sans-serif;
     text-decoration: none;
     color: #333;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 20px;
     transition: color 0.3s;
 }
 
 .nav-right a:hover {
-    color: var(--color-accent, #0055ff);
+    color: var(--color-accent, #C7313D);
 }
 
 .nav-hidden {
@@ -77,7 +89,7 @@ section {
 
 .hook-main img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
 }
 
@@ -124,7 +136,7 @@ section {
     z-index: 2;
 }
 
-.hook-btn {
+.btn {
     display: inline-block;
     margin-top: 0.9em;
     padding: 0.5em 0.85em;
@@ -137,9 +149,10 @@ section {
     transition: background-color 0.3s ease;
     z-index: 2;
     text-decoration: none;
+    width: fit-content;
 }
 
-.hook-btn:hover {
+.btn:hover {
     background-color: #a60000;
 }
 
@@ -147,40 +160,48 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
-    padding: 2rem 4rem;
-    max-width: 100%;
+    gap: 1rem;
+    padding: 2rem;
 }
 
 .hook2-text {
-    max-width: 40%;
+    max-width: 35%;
     color: #FD6929;
     font-family: 'Alexandria', sans-serif;
     font-weight: 600;
     font-size: 45px;
     line-height: 1.2;
-    margin-left: 65px;
+    margin-left: 2em;
 }
 
+/* .hook2 img {
+    max-width: 45%;
+    margin-right: 4em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+} */
 .hook2 img {
     max-width: 50%;
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 47%;
+    height: 60%;
+    object-fit: cover;
+    margin-right: 4em;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .hook2-desc {
-    font-family: 'Geologica';
+    font-family: 'Geologica', sans-serif;
     font-weight: 200;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: -1em;
     color: #4B4B4B;
-    max-width: 90%;
+    margin-top: -1.5em;
+    margin-bottom: -1em;
 }
 
-/* Origins, Where It All Started */
+/* origins, where-it-all-started section */
 .origins {
     background-image: url("images/origins-background.png");
     display: flex;
@@ -190,6 +211,7 @@ section {
 
 .origins h1 {
     font-family: 'Alexandria';
+    padding-top: 0.5em;
     font-weight: 600;
     font-size: 45px;
     text-align: center;
@@ -208,9 +230,101 @@ section {
 .origins p {
     font-family: 'Alexandria';
     font-weight: 400;
-    font-size: 23px;
+    font-size: 27px;
     padding: 1em;
     text-align: center;
+    /* should've been left, but used center align instead */
     color: #FFFEFB;
-    max-width: 60%;
+    max-width: 68%;
+}
+
+/* apps section */
+.apps-btn {
+    display: block;
+    margin: 1em auto 0 auto;
+    padding: 0.5em 0.85em;
+    background-color: #EC3948;
+    color: #FFFEFB;
+    font-family: 'Alexandria';
+    font-size: 26px;
+    font-weight: 400;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.apps-btn:hover {
+    background-color: #a60000;
+}
+
+.app-item img {
+    width: 160px;
+    height: auto;
+    /* border-radius: 25px; */
+}
+
+#apps {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #FFFEFB;
+}
+
+.app-category {
+    margin-bottom: 1em;
+}
+
+.app-category h3 {
+    font-size: 45px;
+    color: #FD6929;
+    font-family: 'Alexandria', sans-serif;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+
+.app-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.app-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+}
+
+.app-item p {
+    margin-top: 0.5rem;
+    font-family: 'Alexandria', sans-serif;
+    font-size: 20px;
+    color: #222;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8em;
+    justify-content: center;
+}
+
+.app-container .app-grid {
+    gap: 4em;
+}
+
+/* Testimonials */
+section#testimonials {
+    background-image: url("images/origins-background.png");
+}
+
+section#testimonials h3 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    color: #FFFEFB;
+    text-align: center;
+    padding-top: 1.5em;
 }
