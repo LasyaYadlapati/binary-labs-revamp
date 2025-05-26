@@ -26,29 +26,29 @@
     <section id="home">
       <div class="hook">
         <div class="hook-main">
-          <img
-            src="images/child-writing.png"
-            alt="Child coloring on a book with a red colored pencil."
-          />
-          <div class="hook-overlay"></div>
           <div class="hook-text">
             <p>
               Play With Purpose <br />
               And Grow With Dexteria
             </p>
           </div>
-          <div class="hook-desc">
+          <div class="hook-desc" style="max-width: 45%">
             <p>
               Engaging apps that support learning, movement, and growth in
               children.
             </p>
-            <a href="#apps" class="btn">Learn More About Our Apps</a>
           </div>
+          <a
+            href="#our-apps"
+            class="btn"
+            style="margin-top: 16em; margin-left: 4em"
+            >Learn More About Our Apps</a
+          >
         </div>
 
         <div class="hook2">
           <div class="hook2-text">
-            <p>Helping Little Hands Do Big Things</p>
+            <h1>Helping Little Hands Do Big Things</h1>
             <div class="hook2-desc">
               <p>
                 Our award-winning Dexteria apps turn everyday screen time into
@@ -58,7 +58,9 @@
                 a time.
               </p>
             </div>
-            <a href="#where-it-started" class="btn">Learn More</a>
+            <a href="#where-it-started" class="btn" style="margin-bottom: 1.5em"
+              >Learn More</a
+            >
           </div>
           <img
             src="images/child-ipad.png"
@@ -145,10 +147,104 @@
 
     <section id="testimonials">
       <h3>What Are Users Saying About Our Apps?</h3>
+      <div class="testimonials">
+        <div class="testimonial-card">
+          <h1>Ross H.</h1>
+          <h4>eSpark Learning</h4>
+          <p>
+            “eSpark loves Dexteria because it can be used effectively for
+            blended learning (technology in the classroom) to enhance dexterity
+            skills in young students. This app combines fun and instruction
+            making it a powerful tool in any teacher's arsenal. The short
+            repeatable exercises will keep students engaged and having fun while
+            drastically improving their skills. Student's that struggle with
+            fine motor-skills such as writing stand to gain greatly from the
+            usage of this app in their classroom.”
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <h1>Kristin V.</h1>
+          <h4>Practice Forum Editor, Journal of Hand Therapy</h4>
+          <p>
+            “The authors report improved fine motor coordination when using
+            Dexteria with a healthy population. Technology may improve patient
+            engagement and participation when incorporated into treatment
+            programs.”
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="our-awards">
+      <h3 style="padding-top: 1.2em">Our Awards</h3>
+      <div class="awards-grid">
+        <div class="award-item">
+          <img
+            src="images/a4cwsn-award.svg"
+            alt="Apps for Children with Special Needs, Editor's Choice Award"
+          />
+        </div>
+        <div class="award-item">
+          <img
+            src="images/ctr-award.svg"
+            alt="Children's Technology Review, Editor's Choice Award For Excellence in Design"
+          />
+        </div>
+        <div class="award-item">
+          <img
+            src="images/editors-fav-app-award.svg"
+            alt="Editor's Favorite App"
+          />
+        </div>
+        <div class="award-item">
+          <img src="images/app-of-month-award.svg" alt="App of the Month" />
+        </div>
+        <div class="award-item">
+          <img
+            src="images/featured-in-dummies-award.png"
+            alt="Featured in iPad Apps for Kids"
+            width="600px"
+          />
+        </div>
+        <div class="award-item">
+          <img
+            src="images/cert-dev-award.png"
+            alt="Teachers with Apps, Certified Developer"
+            width="155px"
+            style="margin-top: -1em"
+          />
+        </div>
+      </div>
     </section>
 
     <section id="contact">
-      <h2>Contact Us</h2>
+      <h2>Stay Connected</h2>
+      <form id="contact-form">
+        <div class="cards">
+          <div class="field-card">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="field-input"
+              required
+            />
+          </div>
+          <div class="field-card">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              class="field-input"
+              required
+            />
+          </div>
+          <div>
+            <button type="submit" id="submit-btn">Send</button>
+          </div>
+        </div>
+        <p id="form-message"></p>
+      </form>
     </section>
   </body>
 </html>

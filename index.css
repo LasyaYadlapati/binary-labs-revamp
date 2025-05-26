@@ -24,8 +24,8 @@ section {
     align-items: center;
     background-color: white;
     padding: 1rem 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    height: 100px;
+    box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.1);
+    height: 6.25em;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -35,20 +35,12 @@ section {
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding-left: 90px;
+    margin-left: 2em;
 }
 
 .logo {
-    height: 60px;
+    height: 3.75em;
     width: auto;
-}
-
-.brand-name {
-    font-family: 'Alexandria', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #222;
 }
 
 .nav-right {
@@ -62,7 +54,7 @@ section {
     text-decoration: none;
     color: #333;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25em;
     transition: color 0.3s;
 }
 
@@ -85,54 +77,38 @@ section {
 
 .hook-main {
     position: relative;
-}
-
-.hook-main img {
+    background-image: linear-gradient(rgba(49, 1, 1, 0.4), rgba(49, 1, 1, 0.4)), url("images/child-writing.png");
+    background-size: cover;
     width: 100%;
-    height: 100%;
-    display: block;
-}
-
-.hook-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #31010166;
-    z-index: 1;
-    pointer-events: none;
+    height: 43em;
+    resize: both;
+    /* overflow: visible; */
 }
 
 .hook-text {
     position: absolute;
-    top: 10px;
-    left: 60px;
-    max-width: 877px;
+    margin-left: 0.75em;
+    max-width: 54.813em;
     color: #FFFEFB;
-    text-align: left;
     padding: 1em;
-    border-radius: 10px;
-
+    border-radius: 0.625em;
     font-family: 'Alexandria', sans-serif;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 4em;
     z-index: 2;
 }
 
 .hook-desc {
     position: absolute;
-    top: 265px;
-    left: 100px;
-    max-width: 600px;
+    margin-top: 8.3em;
+    margin-left: 2.7em;
+    max-width: 37.5em;
     color: #FFFEFB;
-    text-align: left;
     padding: 1em;
-    border-radius: 10px;
-
+    border-radius: 0.625em;
     font-family: 'Alexandria', sans-serif;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.875em;
     z-index: 2;
 }
 
@@ -143,13 +119,14 @@ section {
     background-color: #EC3948;
     color: #FFFEFB;
     font-family: 'Alexandria', sans-serif;
-    font-size: 26px;
+    font-size: 1.625em;
     font-weight: 400;
-    border-radius: 30px;
+    border-radius: 1.875em;
     transition: background-color 0.3s ease;
     z-index: 2;
     text-decoration: none;
     width: fit-content;
+    margin-left: 2em;
 }
 
 .btn:hover {
@@ -164,41 +141,35 @@ section {
     padding: 2rem;
 }
 
-.hook2-text {
-    max-width: 35%;
+.hook2-text h1 {
+    max-width: 75%;
     color: #FD6929;
     font-family: 'Alexandria', sans-serif;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 2.813em;
     line-height: 1.2;
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
-/* .hook2 img {
-    max-width: 45%;
-    margin-right: 4em;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px 0px #00000040;
-} */
 .hook2 img {
     max-width: 50%;
     width: 47%;
     height: 60%;
     object-fit: cover;
     margin-right: 4em;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 0.625em;
+    box-shadow: 0em 0.25em 0.25em 0em #00000040;
 }
 
 .hook2-desc {
     font-family: 'Geologica', sans-serif;
     font-weight: 200;
-    font-size: 20px;
-    line-height: 30px;
-    margin-right: -1em;
+    font-size: 1.25em;
+    line-height: 1.875em;
     color: #4B4B4B;
-    margin-top: -1.5em;
-    margin-bottom: -1em;
+    margin-top: -0.5em;
+    margin-left: 2.4em;
+    max-width: 85%;
 }
 
 /* origins, where-it-all-started section */
@@ -213,24 +184,24 @@ section {
     font-family: 'Alexandria';
     padding-top: 0.5em;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 2.813em;
     text-align: center;
     color: #FFFEFB;
 }
 
 .origins img {
-    max-width: 485px;
+    max-width: 30.313em;
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 10px;
+    border-radius: 0.625em;
     align-items: center;
 }
 
 .origins p {
     font-family: 'Alexandria';
     font-weight: 400;
-    font-size: 27px;
+    font-size: 1.688em;
     padding: 1em;
     text-align: center;
     /* should've been left, but used center align instead */
@@ -246,9 +217,9 @@ section {
     background-color: #EC3948;
     color: #FFFEFB;
     font-family: 'Alexandria';
-    font-size: 26px;
+    font-size: 1.625em;
     font-weight: 400;
-    border-radius: 30px;
+    border-radius: 1.875em;
     transition: background-color 0.3s ease;
     text-decoration: none;
     width: fit-content;
@@ -261,7 +232,6 @@ section {
 .app-item img {
     width: 160px;
     height: auto;
-    /* border-radius: 25px; */
 }
 
 #apps {
@@ -275,7 +245,7 @@ section {
 }
 
 .app-category h3 {
-    font-size: 45px;
+    font-size: 2.813em;
     color: #FD6929;
     font-family: 'Alexandria', sans-serif;
     text-align: center;
@@ -294,13 +264,13 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 200px;
+    max-width: 200em;
 }
 
 .app-item p {
     margin-top: 0.5rem;
     font-family: 'Alexandria', sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #222;
 }
 
@@ -315,16 +285,194 @@ section {
     gap: 4em;
 }
 
-/* Testimonials */
+/* testimonials section */
 section#testimonials {
     background-image: url("images/origins-background.png");
+    padding-bottom: 4em;
 }
 
 section#testimonials h3 {
     font-family: 'Alexandria', sans-serif;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 2.813em;
     color: #FFFEFB;
     text-align: center;
     padding-top: 1.5em;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5em;
+    justify-content: center;
+    align-items: stretch;
+    padding: 1em 2em;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
+    border-radius: 0.938em;
+    padding: 2em 3em;
+    max-width: 37%;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.testimonial-card h1 {
+    font-size: 1.625em;
+    font-weight: 500;
+    margin: 0;
+    font-family: 'Geologica', sans-serif;
+    color: #804D31;
+    text-align: center;
+}
+
+.testimonial-card h4 {
+    font-size: 1.1em;
+    font-weight: 100;
+    margin: 0.625em;
+    font-family: 'Geologica', sans-serif;
+    color: #804D31;
+    text-align: center;
+    max-width: 70%;
+}
+
+.testimonial-card p {
+    font-size: 1.25em;
+    font-weight: 400;
+    font-family: 'Alexandria', sans-serif;
+    color: #444;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 1em;
+    max-width: 100%;
+}
+
+/* awards section */
+section#our-awards {
+    margin-top: -2em;
+}
+
+section#our-awards h3 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 2.813em;
+    color: #FF7400;
+    text-align: center;
+}
+
+.awards-grid {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3em;
+    margin-left: 4.5em;
+    padding-bottom: 4em;
+}
+
+.award-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 12.5em;
+    flex-wrap: wrap;
+}
+
+/* contact us section */
+section#contact {
+    background-color: #E0424F;
+    padding-bottom: 8em;
+}
+
+section#contact h2 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 2.813em;
+    color: white;
+    padding-top: 1em;
+    margin-left: 2em;
+}
+
+.cards {
+    border-radius: 0.938em;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5.5em;
+    padding: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    column-gap: 2em;
+}
+
+.field-card {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 100;
+    font-size: 0.938em;
+    color: #434343;
+    padding-left: 12em;
+    background-color: white;
+    padding: 0.5em 1em;
+    border-radius: 1.25em;
+    min-width: 23.75em;
+    flex: 1;
+    margin: 0 0.5em;
+}
+
+.field-card h1 {
+    padding-left: 1em;
+    margin: 0.2em 0;
+}
+
+.field-card label {
+    display: block;
+    padding-left: 1em;
+    margin-bottom: 0.3em;
+    font-size: 1em;
+    font-weight: 500;
+    color: #434343;
+}
+
+.field-card input {
+    width: 90%;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-family: 'Alexandria', sans-serif;
+    color: #434343;
+}
+
+.field-input::placeholder {
+    color: #aaa;
+}
+
+#submit-btn {
+    background-color: white;
+    color: #E0424F;
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 0.6em 2em;
+    border: none;
+    border-radius: 1.25em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#submit-btn:hover {
+    background-color: #f9d8dc;
+    transform: translateY(-2px);
+}
+
+#form-message {
+    margin-top: -2em;
+    color: white;
+    font-family: 'Alexandria', sans-serif;
+    font-size: 2em;
 }
