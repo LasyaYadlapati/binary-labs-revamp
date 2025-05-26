@@ -4,7 +4,7 @@ const pages = [
   { url: "#home", title: "HOME" },
   { url: "#our-apps", title: "OUR APPS" },
   { url: "#faq", title: "FAQ" },
-  { url: "#contact", title: "CONTACT US" },
+  { url: "#contact-us", title: "CONTACT US" },
 ];
 
 const nav = document.createElement("nav");

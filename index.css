@@ -230,7 +230,7 @@ section {
 }
 
 .app-item img {
-    width: 160px;
+    width: 10em;
     height: auto;
 }
 
@@ -382,12 +382,50 @@ section#our-awards h3 {
 }
 
 /* contact us section */
-section#contact {
+#contact-us {
+    color: #804D31;
+    font-family: 'Alexandria', sans-serif;
+    padding: 2em;
+    border-radius: 1em;
+    max-width: 400px;
+    margin-left: 4em;
+}
+
+#contact-us h2 {
+    font-size: 2.813em;
+    margin-bottom: 1em;
+    color: #FF7400;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.2em;
+}
+
+.contact-item .icon {
+    font-size: 1.3em;
+    margin-right: 0.8em;
+    line-height: 1.5em;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.contact-item a {
+    color: #804D31;
+    text-decoration: underline;
+}
+
+/* connect section */
+section#connected {
     background-color: #E0424F;
     padding-bottom: 2em;
 }
 
-section#contact h2 {
+section#connected h2 {
     font-family: 'Alexandria', sans-serif;
     font-weight: 600;
     font-size: 2.813em;
@@ -477,9 +515,10 @@ section#contact h2 {
     font-size: 2em;
 }
 
+/* footer section */
 #site-footer {
-    background-color: #FFFEFB;
-    color: #C7313D;
+    background-color: #333;
+    color: #aaa;
     font-family: 'Alexandria', sans-serif;
     font-size: 0.85em;
     padding: 0.75em;
