@@ -54,22 +54,35 @@ document
   .addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const nameInput = document.querySelector("input[name='name']");
-    const emailInput = document.querySelector("input[name='email']");
+    const name = document.querySelector("input[name='name']").value.trim();
+    const email = document.querySelector("input[name='email']").value.trim();
     const message = document.getElementById("form-message");
 
-    const name = nameInput.value.trim();
-    const email = emailInput.value.trim();
+    message.textContent = "";
 
-    if (!name || !email) {
-      message.textContent = "Please fill out both fields.";
-      message.style.color = "white";
-      return;
-    }
-
-    message.textContent = `Thank you, ${name}! We'll contact you at ${email}.`;
-    message.style.color = "#dff0d8";
-
-    nameInput.value = "";
-    emailInput.value = "";
+    fetch("https://sheetdb.io/api/v1/a8ql2hbdbwaph", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        data: {
+          name: name,
+          email: email,
+        },
+      }),
+    })
+      .then((res) => {
+        if (res.ok) {
+          message.style.color = "#dff0d8";
+          message.textContent = "Thank you! Your info has been received.";
+          document.getElementById("contact-form").reset();
+        } else {
+          throw new Error("Form submission failed.");
+        }
+      })
+      .catch(() => {
+        message.style.color = "red";
+        message.textContent = "Oops! Something went wrong.";
+      });
   });
