@@ -6,11 +6,11 @@
     <title>Binary Labs: Occupational Therapy Apps</title>
 
     <!-- page links -->
-    <link rel="stylesheet" href="index.css" />
-    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="/index.css" />
+    <script type="module" src="/index.js"></script>
 
     <!-- favicon -->
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
 
     <!-- fonts -->
     <link
@@ -217,7 +217,7 @@
       </div>
     </section>
 
-    <section id="connected">
+    <!-- <section id="connected">
       <h2>Stay Connected</h2>
       <form id="contact-form">
         <div class="cards">
@@ -244,7 +244,61 @@
               Send
             </button>
           </div>
+          <div class="field-card">
+            <textarea name="message" placeholder="Message" required></textarea>
+          </div>
         </div>
+        <p
+          id="form-message"
+          style="
+            margin-top: 1em;
+            margin-left: 2.8em;
+            color: white;
+            font-family: 'Alexandria', sans-serif;
+          "
+        ></p>
+      </form>
+    </section> -->
+
+    <section id="connected">
+      <h2>Stay Connected</h2>
+      <form id="contact-form">
+        <div class="cards">
+          <!-- Row for Name and Email -->
+          <div class="row two-columns">
+            <div class="field-card">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                class="field-input"
+                required
+              />
+            </div>
+            <div class="field-card">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                class="field-input"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="field-card full-width">
+            <textarea name="message" placeholder="Message" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="button-row">
+            <button type="submit" id="submit-btn" class="field-button">
+              Send
+            </button>
+          </div>
+        </div>
+
         <p
           id="form-message"
           style="

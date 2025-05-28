@@ -1,10 +1,10 @@
 const ARE_WE_HOME = document.documentElement.classList.contains("home");
 
 const pages = [
-  { url: "#home", title: "HOME" },
-  { url: "#our-apps", title: "OUR APPS" },
-  { url: "#faq", title: "FAQ" },
-  { url: "#contact-us", title: "CONTACT US" },
+  { url: "/#home", title: "HOME" },
+  { url: "/#our-apps", title: "OUR APPS" },
+  { url: "/troubleshooting", title: "QUESTIONS?" },
+  { url: "/#contact-us", title: "CONTACT US" },
 ];
 
 const nav = document.createElement("nav");
@@ -14,7 +14,7 @@ const navLeft = document.createElement("div");
 navLeft.classList.add("nav-left");
 
 const logo = document.createElement("img");
-logo.src = "assets/logo.svg";
+logo.src = "/assets/logo.svg";
 logo.alt = "Binary Labs Logo";
 logo.classList.add("logo");
 
@@ -56,6 +56,9 @@ document
 
     const name = document.querySelector("input[name='name']").value.trim();
     const email = document.querySelector("input[name='email']").value.trim();
+    const userMessage = document
+      .querySelector("textarea[name='message']")
+      .value.trim();
     const message = document.getElementById("form-message");
 
     message.textContent = "";
@@ -69,6 +72,7 @@ document
         data: {
           name: name,
           email: email,
+          message: userMessage, // <-- Added this line
         },
       }),
     })

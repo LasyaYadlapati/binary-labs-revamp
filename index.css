@@ -485,12 +485,23 @@ section#connected h2 {
     color: #434343;
 }
 
-.field-input::placeholder {
+textarea {
+    width: 95%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-family: 'Alexandria', sans-serif;
+    color: #434343;
+}
+
+::placeholder {
     color: #aaa;
 }
 
 #submit-btn {
     background-color: white;
+    margin-left: 0.4em;
     color: #E0424F;
     font-family: 'Alexandria', sans-serif;
     font-weight: 600;
@@ -515,6 +526,28 @@ section#connected h2 {
     font-size: 2em;
 }
 
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.field-card {
+    flex: 1;
+    min-width: 200px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex-start;
+}
+
 /* footer section */
 #site-footer {
     background-color: #333;
@@ -524,4 +557,53 @@ section#connected h2 {
     padding: 0.75em;
     text-align: center;
     line-height: 1.6em;
+}
+
+
+section#troubleshooting {
+    background-image: url("images/origins-background.png");
+    padding-bottom: 4em;
+    margin-top: -5em;
+    font-family: 'Alexandria', sans-serif;
+    color: #FFFEFB;
+
+    h3 {
+        font-weight: 600;
+        font-size: 2.813em;
+        margin-left: 2em;
+        padding-top: 1.5em;
+    }
+
+    h5 {
+        font-weight: 500;
+        font-size: 2em;
+        margin-left: 2.8em;
+        margin-right: 10em;
+        margin-top: -0.5em;
+    }
+
+    ul {
+        font-weight: 300;
+        font-size: 1.5em;
+        margin-left: 4.8em;
+        margin-right: 10em;
+        margin-top: -0.5em;
+    }
+
+    li {
+        margin-top: 0.5em;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 1.25em;
+        margin-left: 4.8em;
+        margin-top: 2em;
+    }
+
+    a {
+        /* text-decoration: none; */
+        color: white;
+        font-weight: bolder;
+    }
 }
