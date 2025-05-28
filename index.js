@@ -1,10 +1,10 @@
 const ARE_WE_HOME = document.documentElement.classList.contains("home");
 
 const pages = [
-  { url: "/#home", title: "HOME" },
+  { url: "#home", title: "HOME" },
   { url: "/#our-apps", title: "OUR APPS" },
   { url: "/troubleshooting/index.html", title: "QUESTIONS?" },
-  { url: "/#contact-us", title: "CONTACT US" },
+  { url: "#contact-us", title: "CONTACT US" },
 ];
 
 const nav = document.createElement("nav");
