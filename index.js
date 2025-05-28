@@ -1,9 +1,9 @@
 const ARE_WE_HOME = document.documentElement.classList.contains("home");
 
 const pages = [
-  { url: "#home", title: "HOME" },
-  { url: "#our-apps", title: "OUR APPS" },
-  { url: "/troubleshooting/index.html", title: "QUESTIONS?" },
+  { url: "binary-labs-revamp/#home", title: "HOME" },
+  { url: "binary-labs-revamp/#our-apps", title: "OUR APPS" },
+  { url: "binary-labs-revamp/troubleshooting/index.html", title: "QUESTIONS?" },
   { url: "#contact-us", title: "CONTACT US" },
 ];
 
